@@ -1,0 +1,18 @@
+package abstractFactory;
+
+/**
+ * Created by Zornitsa Petkova on 7/6/15.
+ */
+public class FactoryProducer {
+  public static AbstractFactory getFactory(String factory){
+
+  if(factory.equals("Part")){
+    return new HousePartFactory();
+
+  }else if(factory.equals("Color")){
+    return new ColorFactory();
+  }
+
+  return null;
+}
+}
