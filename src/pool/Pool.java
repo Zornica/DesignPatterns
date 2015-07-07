@@ -14,9 +14,6 @@ public class Pool {
   }
 
   public Object acquire() throws NotAvailableObjectException {
-    if (i == index) {
-      i = 0;
-    }
     if (i < index) {
       Object object = array[i];
       array[i] = null;
@@ -28,7 +25,7 @@ public class Pool {
   }
 
   public void release(Object object) {
-    for (int i = 0; i < index; i++) {
+    for ( i = 0; i < index; i++) {
       if (array[i] == null) {
         array[i] = object;
         break;
