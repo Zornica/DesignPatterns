@@ -6,13 +6,15 @@ package proxy;
 public class IntegerProxy implements Integer {
   private int number;
   private RealInteger realInteger;
+  private IntegerFactory factory;
   public IntegerProxy(int number) {
     this.number = number;
   }
   @Override
   public void display() {
     if(realInteger==null){
-      realInteger=new RealInteger(number);
+     /* realInteger=factory.createInstance(number);*/
+      realInteger = new RealInteger(number);
     }
     realInteger.display();
   }

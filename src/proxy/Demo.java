@@ -5,7 +5,7 @@ package proxy;
  */
 public class Demo {
   public static void main(String[] args) {
-    Integer integer=new IntegerProxy(10);
+    Integer integer=new IntegerProxy(1);
     integer.display();
   }
 }

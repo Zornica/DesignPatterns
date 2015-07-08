@@ -5,13 +5,16 @@ package proxy;
  */
 public class RealInteger implements Integer{
   private int number;
-  private Display display;
+  /*private IntegerFactory factory;*/
+
   public RealInteger(int number) {
     this.number = number;
-    display = new RealDisplay();
+  /*  display = factory.createInstance();*/
+
   }
   @Override
   public void display() {
-    display.display(number);
+    /*display.display(number);*/
+    System.out.println("The class "+this.getClass().getSimpleName() + " shows the number "+ number);
   }
 }
