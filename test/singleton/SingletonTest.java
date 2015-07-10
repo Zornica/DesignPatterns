@@ -2,7 +2,8 @@ package singleton;
 
 import org.junit.Test;
 
-import static org.hamcrest.CoreMatchers.is;
+
+import static org.hamcrest.core.IsSame.sameInstance;
 import static org.junit.Assert.assertThat;
 
 /**
@@ -13,6 +14,6 @@ public class SingletonTest {
   public void testName() throws Exception {
     Singleton ref1 = Singleton.getInstance();
     Singleton ref2 = Singleton.getInstance();
-    assertThat(ref1, is(ref2));
+    assertThat(ref1, sameInstance(ref2));
   }
 }
