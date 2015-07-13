@@ -14,9 +14,7 @@ public class Demo {
     HousePart door = partFactory.getHousePart("Door");
     door.create();
 
-    AbstractFactory colorFactory = FactoryProducer.getFactory("Color");
 
-    Color black = colorFactory.getColor("Black");
-    black.fill();
+
   }
 }

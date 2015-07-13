@@ -5,13 +5,13 @@ package abstractFactory;
  */
 public class Reflection {
 
-  public <T extends HousePart>T instance(Class<T> instance){
+  public <T extends HousePart> T instance(Class<T> instance) {
     T part = null;
-    try{
+    try {
       String name = instance.getName();
       Class housePart = Class.forName(name);
-      part = (T)housePart.newInstance();
-    }catch (Exception e){
+      part = (T) housePart.newInstance();
+    } catch (Exception e) {
       System.out.println(e);
     }
     return part;

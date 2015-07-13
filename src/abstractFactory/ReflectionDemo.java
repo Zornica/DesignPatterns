@@ -1,7 +1,6 @@
 package abstractFactory;
 
 
-
 /**
  * Created by Zornitsa Petkova on 7/13/15.
  */

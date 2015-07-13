@@ -6,7 +6,7 @@ package proxy;
 public class IntegerProxy implements Integer {
   private int number;
   private RealInteger realInteger;
-  private IntegerFactory factory;
+ /* private IntegerFactory factory;*/
   public IntegerProxy(int number) {
     this.number = number;
   }

@@ -18,8 +18,5 @@ public class HousePartFactory extends  AbstractFactory {
     }
     return null;
   }
-  @Override
-  public Color getColor(String color){
-    return null;
-  }
+
 }

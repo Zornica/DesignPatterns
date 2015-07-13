@@ -1,7 +1,9 @@
 package singleton;
 
-import org.junit.Test;
 
+
+
+import org.junit.Test;
 
 import static org.hamcrest.core.IsSame.sameInstance;
 import static org.junit.Assert.assertThat;

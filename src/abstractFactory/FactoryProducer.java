@@ -9,8 +9,6 @@ public class FactoryProducer {
   if(factory.equals("Part")){
     return new HousePartFactory();
 
-  }else if(factory.equals("Color")){
-    return new ColorFactory();
   }
 
   return null;
