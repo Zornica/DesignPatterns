@@ -13,7 +13,7 @@ import static org.junit.Assert.assertThat;
  */
 public class SingletonTest {
   @Test
-  public void testName() throws Exception {
+  public void singleInstanceIsCreated() throws Exception {
     Singleton ref1 = Singleton.getInstance();
     Singleton ref2 = Singleton.getInstance();
     assertThat(ref1, sameInstance(ref2));

@@ -6,15 +6,13 @@ import java.util.List;
 /**
  * Created by Zornitsa Petkova on 7/8/15.
  */
-public class SoldProducts implements Observer {
+public class SoldProducts implements ProductChangeListener {
 
   List<Product> soldProducts = new ArrayList<Product>();
 
   @Override
   public void registerProduct(Product product) {
-    if (soldProducts.contains(product)) {
       soldProducts.remove(product);
-    }
   }
 
   @Override

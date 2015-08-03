@@ -1,4 +1,4 @@
-package abstractFactory;
+package abstractfactory;
 
 /**
  * Created by Zornitsa Petkova on 7/6/15.
@@ -8,7 +8,6 @@ public class FactoryProducer {
 
   if(factory.equals("Part")){
     return new HousePartFactory();
-
   }
 
   return null;

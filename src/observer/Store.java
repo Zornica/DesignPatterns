@@ -8,21 +8,21 @@ import java.util.List;
  */
 public class Store {
 
-  List<Observer> observerList = new ArrayList<Observer>();
+  List<ProductChangeListener> productChangeListenerList = new ArrayList<ProductChangeListener>();
 
   public void saleProduct(Product product) {
-    for (Observer observer : observerList) {
-      observer.soldProduct(product);
+    for (ProductChangeListener productChangeListener : productChangeListenerList) {
+      productChangeListener.soldProduct(product);
     }
   }
 
   public void registerProduct(Product product) {
-    for (Observer observer : observerList) {
-      observer.registerProduct(product);
+    for (ProductChangeListener productChangeListener : productChangeListenerList) {
+      productChangeListener.registerProduct(product);
     }
   }
 
-  public void addInList(Observer observer) {
-    observerList.add(observer);
+  public void addListener(ProductChangeListener productChangeListener) {
+    productChangeListenerList.add(productChangeListener);
   }
 }

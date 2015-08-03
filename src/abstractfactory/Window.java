@@ -1,4 +1,4 @@
-package abstractFactory;
+package abstractfactory;
 
 /**
  * Created by Zornitsa Petkova on 7/6/15.

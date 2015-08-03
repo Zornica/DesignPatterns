@@ -6,7 +6,7 @@ import java.util.List;
 /**
  * Created by Zornitsa Petkova on 7/8/15.
  */
-public class AvailableProducts implements Observer {
+public class AvailableProducts implements ProductChangeListener {
 
   List<Product> availableProducts = new ArrayList<Product>();
 
@@ -17,9 +17,7 @@ public class AvailableProducts implements Observer {
 
   @Override
   public void soldProduct(Product product) {
-    if (availableProducts.contains(product)) {
-      availableProducts.remove(product);
-    }
+    availableProducts.remove(product);
   }
 
   public List<Product> getList() {
